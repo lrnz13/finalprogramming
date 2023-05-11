@@ -34,5 +34,5 @@ coordinatorsdf=consultadf[consultadf["role"]=="coordinator"]
 coordinatorsdf=coordinatorsdf[["shortName", "name", "activityType", "projectAcronym"]]
 
 st.write(consultacolumnas)
-st.bar_chart(consultacolumnas, x="year", y="ecContribution")
+st.bar_chart(consultacolumnas)
 st.write(coordinatorsdf)
