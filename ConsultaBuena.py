@@ -2,7 +2,7 @@ import pandas as pd
 from sqlite3 import connect
 import streamlit as st
 from PIL import Image
-#import streamlite as st
+
 conection = connect("InfoDatabase.db") #Definimos a dónde nos vamos a conectar
 ProjectsBBDD = pd.read_sql('SELECT * FROM ProjectsDB', conection)  
 CountriesBBDD = pd.read_sql('SELECT * FROM CountriesDB', conection)
