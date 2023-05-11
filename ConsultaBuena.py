@@ -41,5 +41,5 @@ st.write(coordinatorsdf)
 st.subheader("Contribution by type of activity")
 st.bar_chart(data=consultacolumnas, x="activityType", y="ecContribution")
 
-image = Image.open('Flag.jpg')
+image = Image.open('Flag.png')
 st.image(image, caption='Sunrise by the mountains')
