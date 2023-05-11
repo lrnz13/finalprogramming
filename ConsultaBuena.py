@@ -8,8 +8,8 @@ CountriesBBDD = pd.read_sql('SELECT * FROM CountriesDB', conection)
 ParticipantsBBDD = pd.read_sql('SELECT * FROM ParticipantsDB', conection)
 
 #2.6
-option=st.selectbox("Choose a country: ",'Belgium', 'Bulgaria', 'Czechia', 'Denmark', 'Germany', 'Estonia', 'Ireland','Greece', 'Spain', 'France', 'Croatia'
-, 'Italy', 'Cyprus', 'Latvia', 'Lithuania','Luxembourg','Hungary', 'Malta', 'Netherlands', 'Austria', 'Poland', 'Portugal','Romania', 'Slovenia', 'Slovakia', 'Finland', 'Sweden')
+option=st.selectbox("Choose a country: ",('Belgium', 'Bulgaria', 'Czechia', 'Denmark', 'Germany', 'Estonia', 'Ireland','Greece', 'Spain', 'France', 'Croatia'
+, 'Italy', 'Cyprus', 'Latvia', 'Lithuania','Luxembourg','Hungary', 'Malta', 'Netherlands', 'Austria', 'Poland', 'Portugal','Romania', 'Slovenia', 'Slovakia', 'Finland', 'Sweden'))
     
 countriesdictionary= {'Belgium': 'BE', 'Bulgaria': 'BG', 'Czechia': 'CZ', 'Denmark': 'DK', 'Germany':
 'DE', 'Estonia': 'EE', 'Ireland': 'IE','Greece': 'EL', 'Spain': 'ES', 'France': 'FR', 'Croatia':
