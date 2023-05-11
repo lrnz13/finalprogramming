@@ -1,6 +1,6 @@
 import pandas as pd
 from sqlite3 import connect
-import stremlit as st
+import streamlit as st
 #import streamlite as st
 conection = connect("InfoDatabase.db") #Definimos a dónde nos vamos a conectar
 ProjectsBBDD = pd.read_sql('SELECT * FROM ProjectsDB', conection)  
