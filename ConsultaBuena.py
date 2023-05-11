@@ -33,7 +33,12 @@ consultacolumnas = consultadf.groupby('name').agg({
 coordinatorsdf=consultadf[consultadf["role"]=="coordinator"]
 coordinatorsdf=coordinatorsdf[["shortName", "name", "activityType", "projectAcronym"]]
 
+st.subheader("Companies ranked by contribution")
 st.write(consultacolumnas)
+st.subheader("Country Coordinators")
 st.write(coordinatorsdf)
+st.subheader("Contribution by type of activity")
 st.bar_chart(data=consultacolumnas, x="activityType", y="ecContribution")
 
+image = Image.open('Flag.jpg')
+st.image(image, caption='Sunrise by the mountains')
